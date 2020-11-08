@@ -11,12 +11,12 @@ O projeto deve ter separado o frontend do Backend. Seu objetivo é criar o backe
   
 Modelagem Básica:
 
--Project
-  Name
-  Has Many tasks
+*Project
+  - Name
+  - Has Many tasks
 
--Task
-  Date;
-  Description
-  Status
-  ProjectID
+*Task
+  - Date;
+  - Description
+  - Status
+  - ProjectID
