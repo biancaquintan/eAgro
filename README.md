@@ -1,24 +1,22 @@
-# README
+Projeto Test ROR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Premissas básicas:
 
-* Ruby version
+O projeto deve ter separado o frontend do Backend. Seu objetivo é criar o backend(Rails API Only). Neste projeto queremos ver:
+   *Código estruturado em  micro serviços;
+  *Testes funcionais;
+  *Documentação da API para realizações dos testes;
+  *Devemos conseguir adicionar, editar e excluir Tarefas e Projetos.
+  
+Modelagem Básica:
 
-* System dependencies
+-Project
+  Name
+  Has Many tasks
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-Task
+  Date;
+  Description
+  Status
+  ProjectID
