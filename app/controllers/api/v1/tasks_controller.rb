@@ -14,9 +14,9 @@ class Api::V1::TasksController < Api::V1::ApiController
         render json: @task
     end
 
-    # POST /api/v1/tasks
+    # POST /api/v1/projects/:project_id/tasks
     def create
-        @task = Task.new(task_params)
+        @task = Task.new(task_params.merge(project_id: params[:project_id]))
 
         if @task.save
             render json: @task, status: :created
@@ -50,6 +50,6 @@ class Api::V1::TasksController < Api::V1::ApiController
         end
 
         def task_params
-            params.require(:project).permit(:date, :description, :status, :project_id)
+            params.require(:task).permit(:date, :description, :status, :project_id)
         end
 end
